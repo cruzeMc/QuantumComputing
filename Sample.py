@@ -8,7 +8,6 @@ circuit = cirq.Circuit(cirq.X(qubit) ** 0.5, cirq.measure(qubit, key='m'))
 print("Circuit:")
 print(circuit)
 
-
 #Simulate the circuit several times
 simulator = cirq.Simulator()
 results = simulator.run(circuit, repetitions=20)
